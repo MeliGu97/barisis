@@ -1,0 +1,289 @@
+/* TYPOGRAPHIE */
+  .titre-page{
+    color: #000;
+    font-family: initial;
+    font-size: 6vw;
+    font-style: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .sous-titre-page{
+    font-size: 3vw;
+    margin-top: 0px;
+  }
+  h2{
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 5px 0px 5px 0px;
+  }
+  .gigantexte{
+    font-size: 11vw;
+    font-weight: bold;
+    margin: 0px;
+    color: #154511;
+  }
+  .paragraphe{
+    font-size: 15px;
+  }
+  .paragraphe-important{
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+
+  .aligne-a-gauche{
+    text-align: right;
+  }
+  .centrage-texte{
+    text-align: center;
+  }
+  
+
+
+
+  /* ELEMENT PARTICULIER  */
+  nav{
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    padding: 10px 0px 10px 10px;
+  }
+  .blason{
+    height: 40px;
+  }
+  .bttn-nav{
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    border: none;
+  }
+  .bttn-nav :hover,
+  .pageActive{
+    border-bottom: 2px solid;
+  }
+  .bttn-nav a{
+    text-decoration: none;
+    color: black;
+  }
+  body {
+    margin: 0;
+  }
+  
+
+
+  .fond-secondaire{
+    background-color: #d0d0d0;
+  }
+  .fond-tertiaire{
+    background-color: #154511;
+  }
+  
+  .fond-carte{
+    background-image: url(plan-noir-et-blanc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    height: auto;
+  }
+
+  /* ELEMENTS GENERIQUES */
+
+  .marge-HB-grande{
+    height: 200px;
+  }
+  .marge-HB-moyenne{
+    height: 100px;
+  }
+  .marge-HB-petite{
+    height: 50px;
+  }
+
+  .marge-DG-grande{
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .marge-DG-moyenne{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .marge-DG-petite{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .marge-G-toute-petite{
+    padding-left: 20px;
+  }
+
+  .cote-a-cote{
+    display: inline-block;
+  }
+  .centrage{
+    display: block;
+    margin: auto;
+  }
+  .a-gauche{
+    float: left;
+  }
+  .a-droite{
+    float: right;
+  }
+
+  .bttnGenerique{
+    background:  #154511;
+    border: 1px solid #154511;
+    color: white;
+    /* display: inline-block; */
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 12px 80px 12px 80px;
+    width: auto;
+  }
+  .bttnGenerique a{
+    text-decoration: none;
+    color: white;
+  }
+  .bttnGenerique:hover{
+    background:  #21671b;
+  }
+  .wiggle:hover{
+    animation: wiggle 2s linear 30;
+      animation-delay: 0s;
+  }
+  .container{
+    width: 100%;
+    height: auto;
+  }
+  .container-80{
+    width: 80%;
+  }
+  .container-moyen{
+    width: 45%;
+  }
+  .container-petit{
+    width: 20%;
+  }
+  @keyframes wiggle {
+    0%, 12% {
+      transform: rotateZ(0);
+    }
+    20% {
+      transform: rotateZ(-2deg);
+    }
+    25% {
+      transform: rotateZ(2deg);
+    }
+    30% {
+      transform: rotateZ(-2deg);
+    }
+    35% {
+      transform: rotateZ(1deg);
+    }
+    40% {
+      transform: rotateZ(-1deg);
+    }
+    45%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  /* FORMULAIRE */
+  .formulaire {
+    width: 60%;
+    border: 1px solid;
+    border-radius: 8px;
+    margin: 2% 20% 2% 20%;
+    padding: 2%;
+  }
+  
+  form div {
+    width: 98%;
+    margin-left: 1%;
+    min-height: 83px;
+    margin-top: 25px;
+    /* white-space: pre-wrap; */
+    }
+    
+    form div > label {
+    margin-bottom: 7px;
+    font-weight: 600;
+    }
+    
+    form div > input, form div > select, form div > textarea {
+    width: 98%;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+    }
+    
+    form div > input, form div > select {
+    height: 50px;
+    padding-left: 10px;
+
+    }
+    
+    
+    form div > textarea {
+    height: 195px;
+    padding: 15px 0px 0px 10px;
+    }
+    
+    form div > input::placeholder, form div > textarea::placeholder {
+    color: black;
+    }
+    
+    form div > select:invalid {
+    color: black;
+    }
+    
+    form div > select option {
+    background: white;
+    color: #303030;
+    cursor: pointer;
+    }
+    
+    form div:last-child {
+    align-items:center;
+    margin-top: 20px;
+    }
+    
+  
+  
+  
+  
+  @media only all and (max-width: 800px){
+    .member-unit{
+      width: 40%;
+    }
+  
+  }
+  
+  @media only all and (max-width: 640px){
+    .containerEquipe{
+      width:100%;
+      display: block;  
+      margin: auto;
+    }
+  
+    .member-unit{
+      width: 100%;
+      margin-left: 0%;
+    }
+    .twitter,
+  .facebook,
+  .github{
+    width: 32.5%;
+  }
+  
+    .contactez-nous {
+      width: 90%;
+      margin-left: 5%;
+      border: 1px solid;
+      border-radius: 8px;
+    }
+    form div {
+      width: 96%;
+      min-height: 63px;
+      margin-top: 25px;
+      }
+  }
